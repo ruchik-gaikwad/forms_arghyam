@@ -96,7 +96,7 @@ request_params.forEach(function (each){
 
 Promise.all(allPromises).then((values) => {
   console.log(values)
-  fs.writeFile('forms_data_original.json', JSON.stringify(values, null, 2), (err) => {
+  fs.writeFile('forms_data.json', JSON.stringify(values, null, 2), (err) => {
     if (err) throw err;
   })
 });
